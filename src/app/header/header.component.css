@@ -1,0 +1,31 @@
+
+
+.ekart-logo{
+    font-size: 3rem;
+    margin-left: 100px;
+    color: gray;
+font-family: 'Nanum Brush Script';}
+.ekart--search--bar{
+    margin-right: 100px;
+    padding: 10px;
+}
+.ekart-search-box{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+background-color: gray;}
+.ekart--search--btn{
+    padding : 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.512);
+    color: white;
+
+}
+.ekart--bottom--bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.239);
+
+}

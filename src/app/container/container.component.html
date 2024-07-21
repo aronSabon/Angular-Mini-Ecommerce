@@ -1,0 +1,53 @@
+<div class="ekart--product--container">
+   <!-- <img [src]="product.pImage" alt="" width="200px">
+<p>Name: {{product.name}}</p>
+<p>Price: ${{"$" + product.price}}</p>
+<P>Color: {{product.color}}</P>
+<p>Discounted Price: {{getDiscountedPrice()}}</p>
+<p>{{product.inStock > 0 ? 'Only ' + product.inStock + ' items left' : 'not in stock'}}</p>
+<button [disabled]="!(product.inStock>0)">Buy Now</button>
+ <button (click)="decrease()">-</button>
+    <span>  {{addToCart}}</span> 
+ <button (click)="increase()">+</button>
+<br>
+<input (input)="onNameChange($event)" >
+<p>name={{name}}</p>
+<input bind-value="bind"> -->
+   <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+   <!-- <div *ngFor="let item of listOfString">
+   <p>Current element of arrayyy is: {{item}} </p>
+</div> -->
+
+
+   <product-list [searchText]="searchText" #productListComponent></product-list>
+   <product-detail *ngIf="productListComponent.selectedProduct"
+      [productListComp]="productListComponent"></product-detail>
+
+   <div class="ekart-featured-products">
+      <div class="ekart-featured-product-heading">
+         <h2>latest arrival in popular brands</h2>
+      </div>
+
+      <featured-brands>
+         <h3 class="title">New Arrivals in Nike</h3>
+         <button class="call-to-action">
+            Show New Arrivals in lkjljk
+         </button>
+      </featured-brands>
+      <featured-brands>
+         <h3 class="title">New Arrivals in lsadfklsj</h3>
+         <button class="call-to-action">
+            show new arrivals in als;dkfjs         </button>
+      </featured-brands>
+      <featured-brands>
+         <h3 class="title">New Arrivals in Nilsdjkfke</h3>
+         <button class="call-to-action">
+            sjow new arrivals in sladkjfsjk
+         </button>
+      </featured-brands>
+
+
+
+
+   </div>
+</div>
